@@ -171,4 +171,16 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(style);
   }
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Add your sending logic here (AJAX or Email service)
+  // Example: after successful sending...
+  document.getElementById('success-message').style.display = 'block';
+
+  // Optionally, hide the message after a few seconds
+  setTimeout(function() {
+    document.getElementById('success-message').style.display = 'none';
+  }, 3000);
+});
 });
