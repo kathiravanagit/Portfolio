@@ -885,4 +885,9 @@ form button:active {
     border-color: #666;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
   }
+  #success-message {
+  font-weight: bold;
+  color: green;
+  margin-top: 1rem;
+}
 }
