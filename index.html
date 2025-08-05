@@ -291,18 +291,19 @@ I believe in learning by building, and I’m always curious to try new things, s
       />  
       <h1 class="title">Contact Me</h1>
       <p class="section__text__p1">Get in Touch</p>
-      <form action="/send-message" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-        <div id="success-message" style="display:none; color:green; margin-top:10px;">
-  Send message successfully!
-      </form>
-      
-          </section>
-    <section id="contact">
+       <section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Subject" />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+  <div id="success-message" style="display:none; color:green; margin-top:10px;">
+    Send message successfully!
+  </div>
+</section>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
