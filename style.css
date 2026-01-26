@@ -200,6 +200,18 @@ header {
     transition: color 0.3s ease;
 }
 
+.social-media .leetcode-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.social-media .leetcode-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
 .social-media a:hover {
     color: var(--accent-color);
 }
