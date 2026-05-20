@@ -356,6 +356,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
+    grid-auto-flow: dense;
     scrollbar-width: thin;
     scrollbar-color: var(--accent-color) rgba(255, 255, 255, 0.1);
 }
@@ -381,6 +382,7 @@ header {
     overflow: hidden;
     aspect-ratio: 16/9;
     width: 100%;
+    max-width: 280px;
     height: fit-content;
 }
 
@@ -393,6 +395,11 @@ header {
 
 .card:hover img {
     transform: scale(1.1);
+}
+
+.card[data-category="fullstack"] {
+    grid-column: 1 / -1;
+    justify-self: center;
 }
 
 .card-background {
@@ -754,6 +761,10 @@ footer {
     .about-profile img {
         max-width: 300px;
         margin: 0 auto;
+    }
+
+    .featured-project {
+        grid-column: span 1;
     }
 
     .body-nav {

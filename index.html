@@ -117,7 +117,6 @@
                         <button class="skill-btn">Express.js</button>
                         <button class="skill-btn">React.js</button>
                         <button class="skill-btn">Node.js</button>
-                        <button class="skill-btn">PostgreSQL</button>
                         <button class="skill-btn">Vercel</button>
                         <button class="skill-btn">Render</button>
                     </div>
@@ -129,7 +128,10 @@
             <div class="portfolio">
                 <h2>My Work</h2>
                 <div class="portfolio-filter">
-                    <button class="filter-btn active" data-filter="backend">
+                    <button class="filter-btn active" data-filter="fullstack">
+                        Full Stack
+                    </button>
+                    <button class="filter-btn" data-filter="backend">
                         Backend
                     </button>
                     <button class="filter-btn" data-filter="frontend">Frontend</button>
@@ -137,9 +139,23 @@
                 <div class="portfolio-cards-container">
                     <div class="portfolio-cards">
 
-                        <!-- Backend Projects -->
+                        <!-- Full Stack Project -->
 
-                        <div class="card" data-category="backend">
+                        <div class="card" data-category="fullstack" style="display: block;">
+                            <img loading="lazy" src="./assets/conference-management-system.svg"
+                                alt="Conference Management System preview" />
+                            <div class="card-background">
+                                <p>CMS</p>
+                                <div class="portfolio-link">
+                                    <a href="https://cms-18.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live preview"><i
+                                            class="fa-solid fa-globe"></i></a>
+                                    <a href="https://github.com/kathiravanagit/conference-management-system.git"
+                                        target="_blank" rel="noopener noreferrer" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Backend Projects -->
+                        <div class="card" data-category="backend" style="display: none;">
                             <img loading="lazy" src="./assets/astra.jpeg" alt="LMS bot Project" />
                             <div class="card-background">
                                 <p>LMS bot</p>
@@ -152,7 +168,7 @@
                             </div>
                         </div>
 
-                        <div class="card" data-category="backend">
+                        <div class="card" data-category="backend" style="display: none;">
                             <img loading="lazy" src="./assets/authkit.png" alt="authkit" />
                             <div class="card-background">
                                 <p>User Authentication System</p>
@@ -166,7 +182,7 @@
                         </div>
 
                         
-                        <div class="card" data-category="backend">
+                        <div class="card" data-category="backend" style="display: none;">
                             <img loading="lazy" src="./assets/blog.png" alt="blog" />
                             <div class="card-background">
                                 <p>Blog</p>
@@ -181,7 +197,7 @@
 
                         <!-- Frontend Projects -->
 
-                        <div class="card" data-category="frontend">
+                        <div class="card" data-category="frontend" style="display: none;">
                             <img loading="lazy" src="./assets/recipe-ideas.png" alt="Recipe Ideas img" />
                             <div class="card-background">
                                 <p>Recipe Ideas</p>
@@ -195,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card" data-category="frontend">
+                        <div class="card" data-category="frontend" style="display: none;">
                             <img loading="lazy" src="./assets/coffee web.png" alt="Coffee Shop Website" />
                             <div class="card-background">
                                 <p>Coffee Shop Website</p>
@@ -208,7 +224,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card" data-category="frontend">
+                        <div class="card" data-category="frontend" style="display: none;">
                             <img loading="lazy" src="./assets/spotify.png" alt="Album finder using React" />
                             <div class="card-background">
                                 <p>Album Finder Using React</p>
@@ -427,8 +443,8 @@
             const filterBtns = document.querySelectorAll(".filter-btn");
             const cards = document.querySelectorAll(".card");
 
-            // Show backend projects by default
-            filterProjects("backend");
+            // Show the featured full-stack project by default
+            filterProjects("fullstack");
 
             filterBtns.forEach((btn) => {
                 btn.addEventListener("click", () => {
