@@ -3,6 +3,8 @@ import type { ReactNode } from "react";
 import { HeroCtas } from "./hero-ctas";
 import { FadeIn, ScaleUnblur } from "@/components/ui/motion-primitives";
 import { PortraitMorph } from "./portrait-morph";
+import { BlurText } from "@/components/ui/blur-text";
+import { ShinyText } from "@/components/ui/shiny-text";
 
 const PORTRAIT_SRC = "/profile.jpeg";
 const PORTRAIT_HOVER_SRC = "/profile.jpeg";
@@ -22,15 +24,28 @@ export function Hero(): ReactNode {
             </p>
 
             <h1 className="text-[2.75rem] font-medium leading-[1.05] tracking-tight text-foreground md:text-[2.5rem] lg:text-[3.65rem]">
-              <span className="block whitespace-nowrap">
-                Full Stack Developer &
-              </span>
-              <span className="block whitespace-nowrap">Python Enthusiast</span>
+              <BlurText
+                text="Full Stack Developer &"
+                animateBy="words"
+                direction="top"
+                delay={150}
+                className="block whitespace-nowrap"
+              />
+              <BlurText
+                text="Python Enthusiast"
+                animateBy="words"
+                direction="top"
+                delay={150}
+                className="block whitespace-nowrap"
+              />
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Developer focused on building real-world web applications
-              using Python-based backend technologies.
+              <ShinyText
+                text="Developer focused on building real-world web applications using Python-based backend technologies."
+                speed={4}
+                spread={100}
+              />
             </p>
 
             <HeroCtas />
