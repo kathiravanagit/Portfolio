@@ -5,423 +5,436 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/logo.jpeg" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
-    <title>Kathiravan A | Web Developer</title>
+    <title>Kathiravan A | Portfolio</title>
     <meta name="description" content="Kathiravan A — MERN Stack Developer and Python enthusiast. Portfolio showcasing projects built with React, Node.js, Django, PostgreSQL and more." />
 </head>
 
 <body>
-    <header id="home">
-        <div class="header-bg">
-            <nav class="navigation-container">
-                <div class="navigation">
-                    <div class="logo">
-                        <h1>Portfolio</h1>
-                    </div>
-                    <input type="checkbox" id="hamburger" />
-                    <div class="navigation-bar">
-                        <ul class="nav-links">
-                            <li>
-                                <a href="#home">HOME
-                                    <div class="bg-bar"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#about">ABOUT
-                                    <div class="bg-bar"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#projects">PROJECTS
-                                    <div class="bg-bar"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#testimonials">ACHIEVEMENTS
-                                    <div class="bg-bar"></div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#contact">CONTACT
-                                    <div class="bg-bar"></div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <label for="hamburger" class="hamburger-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </label>
-                </div>
-            </nav>
-            <section class="content">
-                <h2>Welcome</h2>
-                <p>I'm <span>Kathiravan</span></p>
-                <div class="subtitle">Full Stack Developer | Python Enthusiast</div>
-                <div class="social-media">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/kathiravan-a-033112291/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/"
-                                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                                <a href="https://github.com/kathiravanagit/" target="_blank" rel="noopener noreferrer"><i
-                                    class="fa-brands fa-github"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://leetcode.com/u/kathiravana/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode profile">
-                                <span class="leetcode-icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24" focusable="false">
-                                        <path d="M16.37 3.07a1.25 1.25 0 0 1 1.84 1.68l-5.3 5.8 3.86 3.6a1.25 1.25 0 0 1-1.72 1.81l-4.67-4.36a1.25 1.25 0 0 1-.06-1.8l5.05-5.73z"></path>
-                                        <path d="M11.64 12.93a1.25 1.25 0 0 1 1.77.11l2.29 2.52a1.25 1.25 0 0 1-1.88 1.65l-1.72-1.9-3.43 3.89 3.47 2.03a1.25 1.25 0 0 1-1.24 2.18l-5.04-2.96a1.25 1.25 0 0 1-.33-1.9l4.34-4.91a1.25 1.25 0 0 1 1.77-.11z"></path>
-                                        <circle cx="18.25" cy="12" r="1.25"></circle>
-                                    </svg>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer" title="Download Resume"><i class="fa-solid fa-file-arrow-down"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
+    <!-- Fixed Pill Navbar -->
+    <nav class="navbar" aria-label="Primary">
+        <a href="#home" class="nav-logo">KA</a>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
-    </header>
+        <a href="https://github.com/kathiravanagit/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </nav>
 
-    <main>
-        <section id="about" class="each-part">
-            <div class="about-me">
-                <div class="about-profile">
-                            <img loading="lazy" src="./assets/profile.jpeg" alt="Kathiravan A" />
-                </div>
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <p class="specific-skill"><span id="typed-text"></span><span class="cursor">|</span></p>
+    <main id="main-content">
 
-                    <p class="about-me-para">
-                        Aspiring web developer with a strong foundation in programming and problem
-                        solving. Focused on building real world web applications using Python based backend technologies
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hey <span class="wave">&#128075;</span>, I'm</p>
+                    <h1 class="hero-name">Kathiravan A</h1>
+                    <p class="hero-role">
+                        <span id="typed-text"></span><span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        Aspiring web developer with a strong foundation in programming and problem solving.
+                        Focused on building real-world web applications using Python-based backend technologies
                         while continuously improving frontend and backend development skills.
                     </p>
-                    <div class="skills-container">
-                        <button class="skill-btn">Python</button>
-                        <button class="skill-btn">Django</button>
-                        <button class="skill-btn">Java Script</button>
-                        <button class="skill-btn">MongoDB</button>
-                        <button class="skill-btn">Express.js</button>
-                        <button class="skill-btn">React.js</button>
-                        <button class="skill-btn">Node.js</button>
-                        <button class="skill-btn">Vercel</button>
-                        <button class="skill-btn">Render</button>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/kathiravanagit/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/kathiravanagit/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kathiravan-a-033112291/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/kathiravana/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M16.37 3.07a1.25 1.25 0 0 1 1.84 1.68l-5.3 5.8 3.86 3.6a1.25 1.25 0 0 1-1.72 1.81l-4.67-4.36a1.25 1.25 0 0 1-.06-1.8l5.05-5.73z"></path>
+                                <path d="M11.64 12.93a1.25 1.25 0 0 1 1.77.11l2.29 2.52a1.25 1.25 0 0 1-1.88 1.65l-1.72-1.9-3.43 3.89 3.47 2.03a1.25 1.25 0 0 1-1.24 2.18l-5.04-2.96a1.25 1.25 0 0 1-.33-1.9l4.34-4.91a1.25 1.25 0 0 1 1.77-.11z"></path>
+                                <circle cx="18.25" cy="12" r="1.25"></circle>
+                            </svg>
+                        </a>
+                        <a href="./assets/Resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="portrait-wrapper">
+                        <img loading="lazy" src="./assets/profile.jpeg" alt="Kathiravan A" />
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="each-part">
-            <div class="portfolio">
-                <h2>My Work</h2>
-                <div class="portfolio-filter">
-                    <button class="filter-btn active" data-filter="fullstack">
-                        Full Stack
-                    </button>
-                    <button class="filter-btn" data-filter="backend">
-                        Backend
-                    </button>
-                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <p class="section-label">Projects</p>
+                <h2 class="section-title">My Work</h2>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: CMS -->
+                <article class="project-card fade-in" data-delay="0">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+                        <span class="project-name">CMS</span>
+                        <span class="project-tag tag-fullstack">Full Stack</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/conference-management-system.svg" alt="Conference Management System" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Conference Management System</h3>
+                        <p>A full-stack platform for managing conferences, registrations, and scheduling with real-time updates.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Full Stack Developer</span>
+                        <div class="project-links">
+                            <a href="https://cms-18.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/conference-management-system.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Astra LMS Bot -->
+                <article class="project-card fade-in" data-delay="0.06">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+                        <span class="project-name">Astra LMS Bot</span>
+                        <span class="project-tag tag-backend">Backend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/astra.jpeg" alt="Astra LMS Bot" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Astra LMS Bot</h3>
+                        <p>An intelligent learning management system bot with automated scheduling and student tracking capabilities.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Backend Developer</span>
+                        <div class="project-links">
+                            <a href="https://astralmsbot.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/Astra-LMS-bot.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: AuthKit -->
+                <article class="project-card fade-in" data-delay="0.12">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <span class="project-name">AuthKit</span>
+                        <span class="project-tag tag-backend">Backend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/authkit.png" alt="User Authentication System" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>User Authentication System</h3>
+                        <p>Secure authentication system with JWT tokens, role-based access control, and session management.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Backend Developer</span>
+                        <div class="project-links">
+                            <a href="https://authkit6.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/user-authentication-system.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Blog -->
+                <article class="project-card fade-in" data-delay="0.18">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <span class="project-name">Blog</span>
+                        <span class="project-tag tag-backend">Backend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/blog.png" alt="Blog Application" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Blog Platform</h3>
+                        <p>A full-featured blog application with content management, user comments, and rich text editing.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Backend Developer</span>
+                        <div class="project-links">
+                            <a href="https://blog-iqez.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/Blog.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Recipe Ideas -->
+                <article class="project-card fade-in" data-delay="0.24">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+                        <span class="project-name">Recipe Ideas</span>
+                        <span class="project-tag tag-frontend">Frontend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/recipe-ideas.png" alt="Recipe Ideas" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Recipe Ideas</h3>
+                        <p>A beautiful recipe discovery app with search functionality, filtering, and detailed cooking instructions.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Frontend Developer</span>
+                        <div class="project-links">
+                            <a href="https://recipe-ideas12.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/recipe-ideas.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Coffee Shop -->
+                <article class="project-card fade-in" data-delay="0.30">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <span class="project-name">Coffee Shop</span>
+                        <span class="project-tag tag-frontend">Frontend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/coffee web.png" alt="Coffee Shop Website" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Coffee Shop Website</h3>
+                        <p>An elegant coffee shop website with menu display, online ordering, and responsive design.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Frontend Developer</span>
+                        <div class="project-links">
+                            <a href="https://coffee-shop-website-kappa-blush.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/Coffee-Shop-Website.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: Spotify Album Finder -->
+                <article class="project-card fade-in" data-delay="0.36">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fa-brands fa-spotify"></i></div>
+                        <span class="project-name">Album Finder</span>
+                        <span class="project-tag tag-frontend">Frontend</span>
+                    </div>
+                    <div class="project-card-image">
+                        <img loading="lazy" src="./assets/spotify.png" alt="Album Finder Using React" />
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Spotify Album Finder</h3>
+                        <p>A React-based album discovery app using the Spotify API with search, filtering, and album details.</p>
+                    </div>
+                    <div class="project-card-footer">
+                        <span class="project-meta">Frontend Developer</span>
+                        <div class="project-links">
+                            <a href="https://spotify-album-finder-wwo5.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Live Demo">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                            <a href="https://github.com/kathiravanagit/Spotify-album-finder.git" target="_blank" rel="noopener noreferrer" class="project-link-btn" title="Source Code">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/kathiravanagit?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-wide">
+                    View All Projects <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-grid">
+                <div class="about-left">
+                    <p class="section-label">About</p>
+                    <h2 class="section-title">Who I Am</h2>
+                    <p class="about-description">
+                        Aspiring web developer with a strong foundation in programming and problem solving.
+                        Focused on building real-world web applications using Python-based backend technologies
+                        while continuously improving frontend and backend development skills.
+                    </p>
+                    <div class="about-detail">
+                        <span class="about-detail-label">Location</span>
+                        <span class="about-detail-value">Pondicherry, India</span>
+                    </div>
                 </div>
-                <div class="portfolio-cards-container">
-                    <div class="portfolio-cards">
-
-                        <!-- Full Stack Project -->
-
-                        <div class="card" data-category="fullstack" style="display: block;">
-                            <img loading="lazy" src="./assets/conference-management-system.svg"
-                                alt="Conference Management System preview" />
-                            <div class="card-background">
-                                <p>CMS</p>
-                                <div class="portfolio-link">
-                                    <a href="https://cms-18.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                    <a href="https://github.com/kathiravanagit/conference-management-system.git"
-                                        target="_blank" rel="noopener noreferrer" title="View Code"><i class="fa-brands fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Backend Projects -->
-                        <div class="card" data-category="backend" style="display: none;">
-                            <img loading="lazy" src="./assets/astra.jpeg" alt="LMS bot Project" />
-                            <div class="card-background">
-                                <p>LMS bot</p>
-                                <div class="portfolio-link">
-                                        <a href="https://astralmsbot.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                        <a href="https://github.com/kathiravanagit/Astra-LMS-bot.git"
-                                        target="_blank" rel="noopener noreferrer" title="View Code"><i class="fa-brands fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card" data-category="backend" style="display: none;">
-                            <img loading="lazy" src="./assets/authkit.png" alt="authkit" />
-                            <div class="card-background">
-                                <p>User Authentication System</p>
-                                <div class="portfolio-link">
-                                     <a href="https://authkit6.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                    <a href="https://github.com/kathiravanagit/user-authentication-system.git"
-                                        target="_blank" rel="noopener noreferrer" title="View Code"><i class="fa-brands fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-                        <div class="card" data-category="backend" style="display: none;">
-                            <img loading="lazy" src="./assets/blog.png" alt="blog" />
-                            <div class="card-background">
-                                <p>Blog</p>
-                                <div class="portfolio-link">
-                                     <a href="https://blog-iqez.onrender.com/"  target="_blank" rel="noopener noreferrer" title="Live preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                    <a href="https://github.com/kathiravanagit/Blog.git"
-                                        target="_blank" rel="noopener noreferrer" title="View Code"><i class="fa-brands fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Frontend Projects -->
-
-                        <div class="card" data-category="frontend" style="display: none;">
-                            <img loading="lazy" src="./assets/recipe-ideas.png" alt="Recipe Ideas img" />
-                            <div class="card-background">
-                                <p>Recipe Ideas</p>
-                                <div class="portfolio-link">
-                                        <a href="https://recipe-ideas12.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                        <a
-                                        href="https://github.com/kathiravanagit/recipe-ideas.git" rel="noopener noreferrer"><i
-                                            title="view code" class="fa-solid fa-code"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card" data-category="frontend" style="display: none;">
-                            <img loading="lazy" src="./assets/coffee web.png" alt="Coffee Shop Website" />
-                            <div class="card-background">
-                                <p>Coffee Shop Website</p>
-                                <div class="portfolio-link">
-                                        <a href="https://coffee-shop-website-kappa-blush.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                        <a href="https://github.com/kathiravanagit/Coffee-Shop-Website.git" rel="noopener noreferrer"><i
-                                            title="view code" class="fa-solid fa-code"></i></a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card" data-category="frontend" style="display: none;">
-                            <img loading="lazy" src="./assets/spotify.png" alt="Album finder using React" />
-                            <div class="card-background">
-                                <p>Album Finder Using React</p>
-                                <div class="portfolio-link">
-                                        <a href="https://spotify-album-finder-wwo5.vercel.app/" target="_blank" rel="noopener noreferrer" title="Live Preview"><i
-                                            class="fa-solid fa-globe"></i></a>
-                                        <a href="https://github.com/kathiravanagit/Spotify-album-finder.git" rel="noopener noreferrer" title="view code"><i
-                                            class="fa-solid fa-code"></i></a>
-
-                                </div>
-                            </div>
+                <div class="about-right">
+                    <div class="skills-card">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Django</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">React.js</span>
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Express.js</span>
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">Vercel</span>
+                            <span class="skill-pill">Render</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="acheivements"></section> -->
-
-        <section id="testimonials" class="each-part">
-            <div class="testimonials">
-                <h2>Achievements</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="testimonial-card">
-                                <div class="testimonial-profile">
-                                    <img loading="lazy" src="./assets/intern.jpg" alt="Aspivox" />
-                                </div>
-                                <div class="testimonial-content">
-                                    <h3>Internship on MERN Stack (Oct2025 - Nov2025)</h3>
-                                    <p>
-                                        "Completed a hands-on internship at Aspivox Technologies,
-                                        where I developed a comprehensive understanding of MERN stack"
-                                    </p>
-
-                                    <a href="https://drive.google.com/file/d/1H70e1wUG1yN3356aRumvugY2mbsCtcFW/view?usp=sharing"
-                                        title="view certificate">
-                                        <h4 class="position">view</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial-card">
-                                <div class="testimonial-profile">
-                                    <img loading="lazy" src="./assets/Udemy.jfif" alt="Udemy" />
-                                </div>
-                                <div class="testimonial-content">
-                                    <h3>
-                                         Python & Django Certificate(Feb 2025)
-                                    </h3>
-                                    <p>
-                                        "Completed The Python And Django Framework And HTML 5 Stack Complete Course."
-                                    </p>
-
-                                    <a href="https://www.udemy.com/certificate/UC-8282b091-91b8-426e-bc5a-7462fbc53b6b/"
-                                        title="view certificate">
-                                        <h4 class="position">view</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonial-card">
-                                <div class="testimonial-profile">
-                                    <img loading="lazy" src="./assets/oracle.png" alt="Oracle" />
-                                </div>
-                                <div class="testimonial-content">
-                                    <h3>
-                                           Oracle Cloud Infrastructure(Oct 2025)
-                                    </h3>
-                                    <p>
-                                        "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate"
-                                    </p>
-
-                                    <a href="https://drive.google.com/file/d/1oRgzm6DVaW0Nvg_aUFYgowlGIWuTQoaY/view?usp=sharing"
-                                        title="view certificate">
-                                        <h4 class="position">view</h4>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <!-- <div class="testimonial-nav">
-                        <button class="active" data-slide="0"></button>
-                        <button data-slide="1"></button>
-                        <button data-slide="2"></button>
-                    </div> -->
-                </div>
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="section-header">
+                <p class="section-label">Achievements</p>
+                <h2 class="section-title">Milestones</h2>
+            </div>
+            <div class="achievements-grid">
+                <article class="achievement-card fade-in" data-delay="0">
+                    <div class="achievement-icon"><i class="fa-solid fa-building"></i></div>
+                    <h3>MERN Stack Internship</h3>
+                    <p class="achievement-date">Oct 2025 - Nov 2025</p>
+                    <p>Completed a hands-on internship at Aspivox Technologies, developing a comprehensive understanding of the MERN stack.</p>
+                    <a href="https://drive.google.com/file/d/1H70e1wUG1yN3356aRumvugY2mbsCtcFW/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="achievement-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+                <article class="achievement-card fade-in" data-delay="0.08">
+                    <div class="achievement-icon"><i class="fa-brands fa-python"></i></div>
+                    <h3>Python & Django Certificate</h3>
+                    <p class="achievement-date">Feb 2025</p>
+                    <p>Completed The Python And Django Framework And HTML 5 Stack Complete Course on Udemy.</p>
+                    <a href="https://www.udemy.com/certificate/UC-8282b091-91b8-426e-bc5a-7462fbc53b6b/" target="_blank" rel="noopener noreferrer" class="achievement-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+                <article class="achievement-card fade-in" data-delay="0.16">
+                    <div class="achievement-icon"><i class="fa-solid fa-cloud"></i></div>
+                    <h3>Oracle Cloud Infrastructure</h3>
+                    <p class="achievement-date">Oct 2025</p>
+                    <p>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate.</p>
+                    <a href="https://drive.google.com/file/d/1oRgzm6DVaW0Nvg_aUFYgowlGIWuTQoaY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="achievement-link">
+                        View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
             </div>
         </section>
 
-        <section id="contact" class="each-part">
-            <div class="contact">
-                <h2>Contact Me</h2>
-                <div class="contact-information-container">
-                    <div class="contact-information-details">
-                        <div><i class="fa-solid fa-map-location-dot"></i></div>
-                        <p>Address</p>
-                        <a href="https://maps.app.goo.gl/7WCzwcP5x5e5eTux8">Pondicherry</a>
-                    </div>
-                    <div class="contact-information-details">
-                        <div><i class="fa-solid fa-envelope"></i></div>
-                        <p>Email</p>
-                        <a href="mailto:kathiravanawork@gmail.com">kathiravanawork@gmail.com</a>
-                    </div>
-                    <div class="contact-information-details">
-                        <div><i class="fa-solid fa-phone"></i></div>
-                        <p>Phone</p>
-                        <a href="https://wa.me/919159387204" target="_blank">+91 9159387204</a>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <p class="section-label">Contact</p>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-description">
+                        Have a project in mind or want to collaborate? Feel free to reach out.
+                        I'm always open to discussing new opportunities and ideas.
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:kathiravanawork@gmail.com" class="contact-link-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>kathiravanawork@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/919159387204" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>+91 9159387204</span>
+                        </a>
+                        <a href="https://maps.app.goo.gl/7WCzwcP5x5e5eTux8" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Pondicherry, India</span>
+                        </a>
                     </div>
                 </div>
-
-                <form id="contact-form" class="contact-form" action="https://formspree.io/f/mlggjojq" method="POST">
-                    <div class="contact-info-box">
+                <div class="contact-right">
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mlggjojq" method="POST">
                         <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required />
                         <input type="email" name="email" placeholder="Email Address" required />
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-wide">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div id="form-success" class="form-success">
+                        <i class="fa-solid fa-circle-check"></i> Message sent! Thank you.
                     </div>
-                    <textarea placeholder="Message" name="message" required></textarea>
-
-                    <button type="submit" class="submit-button">Submit</button>
-                </form>
-                <div id="form-success" style="display: none; color: green; margin-top: 10px;">
-                    ✅ Message sent! Thank you.
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <p>© <span id="year"></span> Kathiravan Anbalagan</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://github.com/kathiravanagit/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kathiravan-a-033112291/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://leetcode.com/u/kathiravana/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M16.37 3.07a1.25 1.25 0 0 1 1.84 1.68l-5.3 5.8 3.86 3.6a1.25 1.25 0 0 1-1.72 1.81l-4.67-4.36a1.25 1.25 0 0 1-.06-1.8l5.05-5.73z"></path>
+                        <path d="M11.64 12.93a1.25 1.25 0 0 1 1.77.11l2.29 2.52a1.25 1.25 0 0 1-1.88 1.65l-1.72-1.9-3.43 3.89 3.47 2.03a1.25 1.25 0 0 1-1.24 2.18l-5.04-2.96a1.25 1.25 0 0 1-.33-1.9l4.34-4.91a1.25 1.25 0 0 1 1.77-.11z"></path>
+                        <circle cx="18.25" cy="12" r="1.25"></circle>
+                    </svg>
+                </a>
+            </div>
+            <p class="footer-text">&copy; <span id="year"></span> Kathiravan Anbalagan</p>
+        </div>
     </footer>
 
-    <!-- <div class="body-nav">
-        <a href="#home" tabindex="1"></a>
-        <a href="#about" tabindex="1"></a>
-        <a href="#portfolio" tabindex="1"></a>
-        <a href="#testimonials" tabindex="1"></a>
-        <a href="#contact" tabindex="1"></a>
-    </div> -->
-
-    <!-- PDF Modal -->
-    <div class="pdf-modal">
-        <div class="pdf-content">
-            <button class="close-pdf"><i class="fas fa-times"></i></button>
-            <iframe class="pdf-viewer" src="" title="PDF Viewer"></iframe>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-        // Portfolio Filter
+
         document.addEventListener("DOMContentLoaded", function () {
+            // Typed text effect
             const typedText = document.getElementById("typed-text");
-            const titles = [
-                "Python Enthusiast",
-                "Programmer",
-                "Developer"
-
-            ];
-
+            const titles = ["Full Stack Developer", "Python Enthusiast", "MERN Stack Developer", "Problem Solver"];
             let currentTitleIndex = 0;
             let charIndex = 0;
             let isDeleting = false;
 
             function typeEffect() {
                 const currentTitle = titles[currentTitleIndex];
-
                 if (!isDeleting) {
                     charIndex++;
                     typedText.textContent = currentTitle.substring(0, charIndex);
                     if (charIndex === currentTitle.length) {
-                        setTimeout(() => {
-                            isDeleting = true;
-                            typeEffect();
-                        }, 1200);
+                        setTimeout(() => { isDeleting = true; typeEffect(); }, 1500);
                         return;
                     }
                 } else {
@@ -432,132 +445,95 @@
                         currentTitleIndex = (currentTitleIndex + 1) % titles.length;
                     }
                 }
-
-                const speed = isDeleting ? 60 : 100;
-                setTimeout(typeEffect, speed);
+                setTimeout(typeEffect, isDeleting ? 50 : 90);
             }
-
-            // Start fresh
             typedText.textContent = "";
             typeEffect();
-            const filterBtns = document.querySelectorAll(".filter-btn");
-            const cards = document.querySelectorAll(".card");
 
-            // Show the featured full-stack project by default
-            filterProjects("fullstack");
+            // Navbar active link on scroll
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll(".nav-link");
 
-            filterBtns.forEach((btn) => {
-                btn.addEventListener("click", () => {
-                    filterBtns.forEach((b) => b.classList.remove("active"));
-                    btn.classList.add("active");
-                    filterProjects(btn.dataset.filter);
-                });
-            });
-
-            function filterProjects(category) {
-                cards.forEach((card) => {
-                    if (card.dataset.category === category) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
+            function updateActiveNav() {
+                const scrollY = window.scrollY + 100;
+                sections.forEach(section => {
+                    const top = section.offsetTop;
+                    const height = section.offsetHeight;
+                    const id = section.getAttribute("id");
+                    if (scrollY >= top && scrollY < top + height) {
+                        navLinks.forEach(link => {
+                            link.classList.remove("active");
+                            if (link.getAttribute("href") === "#" + id) {
+                                link.classList.add("active");
+                            }
+                        });
                     }
                 });
             }
+            window.addEventListener("scroll", updateActiveNav);
 
-            // Testimonials Slider
-            // const slides = document.querySelectorAll(".testimonial-slide");
-            // const navButtons = document.querySelectorAll(".testimonial-nav button");
-            // let currentSlide = 0;
-            // let slideNow = true;
-            // function showSlide(index) {
-            //     slides.forEach((slide) => slide.classList.remove("active"));
-            //     navButtons.forEach((button) => button.classList.remove("active"));
-
-            //     slides[index].classList.add("active");
-            //     navButtons[index].classList.add("active");
-            //     currentSlide = index;
-            // }
-
-            // navButtons.forEach((button, index) => {
-            //     button.addEventListener("click", () => {
-            //         showSlide(index);
-            //         slideNow = false;
-            //         setTimeout(() => (slideNow = true), 10000);
-            //     });
-            // });
-
-            // Auto-advance slides
-            // setInterval(() => {
-            //     if (slideNow) {
-            //         currentSlide = (currentSlide + 1) % slides.length;
-            //         showSlide(currentSlide);
-            //     }
-            // }, 5000);
-
-            // PDF Modal
-            const pdfLinks = document.querySelectorAll(".pdf-link");
-            const modal = document.querySelector(".pdf-modal");
-            const closeBtn = document.querySelector(".close-pdf");
-            const pdfViewer = document.querySelector(".pdf-viewer");
-
-            pdfLinks.forEach((link) => {
-                link.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    pdfViewer.src = link.dataset.pdf;
-                    modal.classList.add("active");
-                });
-            });
-
-            closeBtn.addEventListener("click", () => {
-                modal.classList.remove("active");
-                pdfViewer.src = "";
-            });
-
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal) {
-                    modal.classList.remove("active");
-                    pdfViewer.src = "";
+            // Navbar background on scroll
+            const navbar = document.querySelector(".navbar");
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
                 }
             });
-            const hamburgerCheckbox = document.getElementById("hamburger");
-            const navLinks = document.querySelectorAll(".nav-links a");
 
-            navLinks.forEach((link) => {
-                link.addEventListener("click", () => {
-                    // Uncheck the hamburger checkbox to close the menu
-                    hamburgerCheckbox.checked = false;
+            // Fade-in animation on scroll
+            const fadeElements = document.querySelectorAll(".fade-in");
+            const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const delay = parseFloat(entry.target.dataset.delay) || 0;
+                        setTimeout(() => {
+                            entry.target.classList.add("visible");
+                        }, delay * 1000);
+                        observer.unobserve(entry.target);
+                    }
                 });
-            });
+            }, observerOptions);
+            fadeElements.forEach(el => observer.observe(el));
 
-            const form = document.getElementById('contact-form');
-            const successMsg = document.getElementById('form-success');
-
+            // Contact form
+            const form = document.getElementById("contact-form");
+            const successMsg = document.getElementById("form-success");
             if (form) {
-                form.addEventListener('submit', async (e) => {
+                form.addEventListener("submit", async (e) => {
                     e.preventDefault();
                     const formData = new FormData(form);
-
                     try {
                         const response = await fetch("https://formspree.io/f/mlggjojq", {
                             method: "POST",
                             body: formData,
-                            headers: { 'Accept': 'application/json' }
+                            headers: { Accept: "application/json" }
                         });
-
                         if (response.ok) {
                             form.reset();
-                            successMsg.style.display = "block";
+                            successMsg.classList.add("show");
+                            setTimeout(() => successMsg.classList.remove("show"), 4000);
                         } else {
                             alert("Oops! Something went wrong.");
                         }
                     } catch (error) {
                         alert("Error submitting form!");
-                        console.error(error);
                     }
                 });
             }
 
-
+            // Smooth scroll for nav links
+            navLinks.forEach(link => {
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    const target = document.querySelector(link.getAttribute("href"));
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
         });
     </script>
 </body>
