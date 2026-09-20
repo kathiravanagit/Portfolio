@@ -7,31 +7,31 @@ const DepthCarousel = dynamic(() => import("@/components/ui/DepthCarousel"), {
   ssr: false,
 });
 
-type Service = {
+type Interest = {
   title: string;
   description: string;
 };
 
-const SERVICES: Service[] = [
+const INTERESTS: Interest[] = [
   {
-    title: "Custom Web Development",
+    title: "Web Development",
     description:
-      "Full-stack applications built with the MERN stack and Python backends. From concept to deployment — responsive, fast, and production-ready.",
+      "Building full-stack applications with the MERN stack and Python. From concept to deployment — responsive, fast, and production-ready.",
   },
   {
-    title: "AI Integrations",
+    title: "AI & Machine Learning",
     description:
-      "Smart features powered by Generative AI and computer vision. API integrations, chatbots, and intelligent automation for your products.",
+      "Exploring Generative AI, computer vision, and intelligent automation. Building smart features that enhance user experiences.",
   },
   {
-    title: "Database Management",
+    title: "Database & Backend",
     description:
-      "Robust, scalable data architectures with MongoDB and PostgreSQL. Schema design, optimization, and migration strategies that grow with your app.",
+      "Designing robust data architectures with MongoDB and PostgreSQL. Schema optimization, migrations, and scalable systems.",
   },
 ];
 
-export function Services(): ReactNode {
-  const items = SERVICES.map((s) => ({
+export function Interests(): ReactNode {
+  const items = INTERESTS.map((s) => ({
     title: s.title,
     description: s.description,
     alt: s.title,
@@ -40,7 +40,7 @@ export function Services(): ReactNode {
   return (
     <div className="flex flex-col gap-4">
       <h3 className="text-foreground text-[15px] font-semibold tracking-tight">
-        Services
+        Interests
       </h3>
       <div className="border-foreground/5 bg-foreground/2 dark:bg-foreground/5 relative rounded-4xl border p-2 sm:p-4">
         <div className="h-[420px] w-full">
