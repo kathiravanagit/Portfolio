@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "Kathiravan A",
+  name: "Katfolio",
   description:
     "Full Stack Developer and Python Enthusiast. Portfolio showcasing projects built with React, Node.js, Django, and more.",
   url: "https://kathiravan.dev",

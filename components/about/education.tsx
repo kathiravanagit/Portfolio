@@ -4,7 +4,7 @@ type Entry = {
   school: string;
   degree: string;
   period: string;
-  slug?: string;
+  logo?: string;
 };
 
 const ENTRIES: Entry[] = [
@@ -12,17 +12,7 @@ const ENTRIES: Entry[] = [
     school: "Manakula Vinayagar Institute of Technology",
     degree: "B.Tech, Information Technology",
     period: "2022 – 2026",
-    slug: "mvit",
-  },
-  {
-    school: "Udemy",
-    degree: "Python & Django Framework Complete Course",
-    period: "Feb 2025",
-  },
-  {
-    school: "Oracle",
-    degree: "Cloud Infrastructure 2025 Certified AI Foundations Associate",
-    period: "Oct 2025",
+    logo: "/mvit-logo.png",
   },
 ];
 
@@ -62,25 +52,24 @@ export function Education(): ReactNode {
 }
 
 function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
-  const initials = entry.school.charAt(0);
   return (
     <span
-      className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center border"
+      className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden border bg-white"
       aria-hidden="true"
       style={{ borderRadius: 14 }}
     >
-      {entry.slug ? (
+      {entry.logo ? (
         <img
-          src={`https://cdn.simpleicons.org/${entry.slug}`}
-          alt=""
-          width={24}
-          height={24}
-          className="h-6 w-6"
+          src={entry.logo}
+          alt={`${entry.school} logo`}
+          width={48}
+          height={48}
+          className="h-full w-full object-contain p-1"
           draggable={false}
         />
       ) : (
         <span className="text-foreground/60 text-[18px] font-semibold tracking-tight">
-          {initials}
+          {entry.school.charAt(0)}
         </span>
       )}
     </span>
