@@ -1,6 +1,6 @@
-# Katfolio — Kathiravan A's Portfolio
+# Katfolio - Kathiravan A's Portfolio
 
-A modern, animated portfolio website built with Next.js, Tailwind CSS, and TypeScript. Replicates the clean design of [rbp-portfolio](https://rbp-portfolio.vercel.app/) with personalized content.
+A modern, animated portfolio website built with Next.js, Tailwind CSS, and TypeScript with personalized content.
 
 **Live:** [kathiravan.dev](https://kathiravan.dev)
 
@@ -114,7 +114,3 @@ Make sure Vercel project settings:
 - **Build Command:** `next build`
 
 ---
-
-## License
-
-Built with [React Bits Pro](https://reactbits.dev) template. Personal use only.
