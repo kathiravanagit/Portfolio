@@ -9,6 +9,12 @@ type Entry = {
 
 const ENTRIES: Entry[] = [
   {
+    school: "Manakula Vinayagar Institute of Technology",
+    degree: "B.Tech, Information Technology",
+    period: "2022 – 2026",
+    slug: "mvit",
+  },
+  {
     school: "Udemy",
     degree: "Python & Django Framework Complete Course",
     period: "Feb 2025",

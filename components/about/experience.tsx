@@ -17,14 +17,7 @@ const ENTRIES: Entry[] = [
     company: "Aspivox Technologies",
     role: "MERN Stack Intern",
     period: "Oct 2025 – Nov 2025",
-    slug: "aspivox",
     brand: "#2563eb",
-  },
-  {
-    company: "Freelance",
-    role: "Full Stack Developer",
-    period: "2024 – Present",
-    brand: "#10b981",
   },
 ];
 
