@@ -47,6 +47,11 @@ export function ContactCard(): ReactNode {
                     lucideIcon={Mail}
                   />
                   <SocialIcon
+                    href="https://wa.me/919159387204"
+                    label="WhatsApp"
+                    imageSrc="/whatsapp.svg"
+                  />
+                  <SocialIcon
                     href="https://github.com/kathiravanagit/"
                     label="GitHub"
                     imageSrc="/github.svg"

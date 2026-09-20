@@ -1,11 +1,9 @@
 import {
   ArrowRight,
-  Bot,
   Globe,
   Layers,
   LineChart,
   Shield,
-  Utensils,
 } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
 import Image from "next/image";
@@ -44,21 +42,6 @@ const PROJECTS: Project[] = [
     githubUrl: "https://github.com/kathiravanagit/conference-management-system.git",
   },
   {
-    id: "astra",
-    icon: Bot,
-    iconLabel: "Astra LMS Bot",
-    title:
-      "An intelligent learning management system bot with automated scheduling and student tracking.",
-    description:
-      "Backend-focused project built with Python and Django. Integrates with LMS platforms for seamless automation.",
-    meta: "Backend Developer, 2025",
-    imageRatio: 16 / 10,
-    image: "/projects/astra.jpeg",
-    imageAlt: "Astra LMS Bot preview",
-    liveUrl: "https://astralmsbot.vercel.app/",
-    githubUrl: "https://github.com/kathiravanagit/Astra-LMS-bot.git",
-  },
-  {
     id: "authkit",
     icon: Shield,
     iconLabel: "AuthKit",
@@ -89,21 +72,6 @@ const PROJECTS: Project[] = [
     githubUrl: "https://github.com/kathiravanagit/Blog.git",
   },
   {
-    id: "recipe",
-    icon: Utensils,
-    iconLabel: "Recipe Ideas",
-    title:
-      "A beautiful recipe discovery app with search functionality, filtering, and detailed cooking instructions.",
-    description:
-      "Frontend project built with React. Features responsive design, API integration, and interactive UI.",
-    meta: "Frontend Developer, 2025",
-    imageRatio: 16 / 10,
-    image: "/projects/recipe-ideas.png",
-    imageAlt: "Recipe Ideas app preview",
-    liveUrl: "https://recipe-ideas12.vercel.app/",
-    githubUrl: "https://github.com/kathiravanagit/recipe-ideas.git",
-  },
-  {
     id: "coffee",
     icon: LineChart,
     iconLabel: "Coffee Shop",
@@ -117,21 +85,6 @@ const PROJECTS: Project[] = [
     imageAlt: "Coffee Shop Website preview",
     liveUrl: "https://coffee-shop-website-kappa-blush.vercel.app/",
     githubUrl: "https://github.com/kathiravanagit/Coffee-Shop-Website.git",
-  },
-  {
-    id: "spotify",
-    icon: Globe,
-    iconLabel: "Album Finder",
-    title:
-      "A React-based album discovery app using the Spotify API with search, filtering, and album details.",
-    description:
-      "Frontend project built with React and Spotify API. Features real-time search and responsive grid layout.",
-    meta: "Frontend Developer, 2024",
-    imageRatio: 16 / 10,
-    image: "/projects/spotify.png",
-    imageAlt: "Spotify Album Finder preview",
-    liveUrl: "https://spotify-album-finder-wwo5.vercel.app/",
-    githubUrl: "https://github.com/kathiravanagit/Spotify-album-finder.git",
   },
 ];
 
