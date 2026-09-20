@@ -60,7 +60,7 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
     <span
       className="ring-foreground/8 inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden bg-white ring-1 dark:ring-white/10"
       aria-hidden="true"
-      style={{ borderRadius: 14 }}
+      style={{ borderRadius: "50%" }}
     >
       {entry.logo ? (
         <img
@@ -68,7 +68,7 @@ function CompanyLogo({ entry }: { entry: Entry }): ReactNode {
           alt={`${entry.company} logo`}
           width={48}
           height={48}
-          className="h-full w-full object-contain p-1"
+          className="h-full w-full object-cover"
           draggable={false}
         />
       ) : (

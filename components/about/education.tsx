@@ -12,7 +12,7 @@ const ENTRIES: Entry[] = [
     school: "Manakula Vinayagar Institute of Technology",
     degree: "B.Tech, Information Technology",
     period: "2022 – 2026",
-    logo: "/mvit-logo.png",
+    logo: "/education-logo.jpg",
   },
 ];
 
@@ -56,7 +56,7 @@ function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
     <span
       className="border-foreground/15 inline-flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden border bg-white"
       aria-hidden="true"
-      style={{ borderRadius: 14 }}
+      style={{ borderRadius: "50%" }}
     >
       {entry.logo ? (
         <img
@@ -64,7 +64,7 @@ function SchoolLogo({ entry }: { entry: Entry }): ReactNode {
           alt={`${entry.school} logo`}
           width={48}
           height={48}
-          className="h-full w-full object-contain p-1"
+          className="h-full w-full object-cover"
           draggable={false}
         />
       ) : (
