@@ -20,7 +20,7 @@ type NavItem = {
 };
 
 const NAV_ITEMS: readonly NavItem[] = [
-  { label: "Home", href: "/" },
+  { label: "Katfolio", href: "/" },
   { label: "Projects", href: "/projects" },
   { label: "About", href: "/about" },
 ];

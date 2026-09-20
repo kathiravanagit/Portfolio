@@ -29,7 +29,7 @@ export function Hero(): ReactNode {
             </h1>
 
             <p className="max-w-[34ch] text-[22px] leading-[1.4] tracking-tight text-foreground/65">
-              Aspiring web developer focused on building real-world web applications
+              Developer focused on building real-world web applications
               using Python-based backend technologies.
             </p>
 
