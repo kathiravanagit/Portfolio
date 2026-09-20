@@ -31,7 +31,7 @@ export default function AboutPage(): ReactNode {
             </h1>
             <div className="mt-8 space-y-6 text-[17px] leading-[1.7] tracking-tight text-foreground/75 sm:text-[18px]">
               <p>
-                An <strong className="font-semibold text-foreground">aspiring web developer</strong> with a strong foundation in programming and problem solving. Focused on building <strong className="font-semibold text-foreground">real-world web applications</strong> using Python-based backend technologies while continuously improving frontend and backend development skills.
+                An <strong className="font-semibold text-foreground">Web developer</strong> with a strong foundation in programming and problem solving. Focused on building <strong className="font-semibold text-foreground">real-world web applications</strong> using Python-based backend technologies while continuously improving frontend and backend development skills.
               </p>
               <p>
                 My journey into development began with a passion for <strong className="font-semibold text-foreground">Python</strong> and backend systems, which led me to explore the <strong className="font-semibold text-foreground">MERN stack</strong> and full-stack development. I enjoy solving complex problems and building scalable applications.

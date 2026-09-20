@@ -11,7 +11,7 @@ const ENTRIES: Entry[] = [
   {
     school: "Manakula Vinayagar Institute of Technology",
     degree: "B.Tech, Information Technology",
-    period: "2022 – 2026",
+    period: "2023 – 2027",
     logo: "/education-logo.jpg",
   },
 ];
