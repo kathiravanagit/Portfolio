@@ -5,21 +5,21 @@ import gsap from "gsap";
 import "./DepthCarousel.css";
 
 const DEFAULT_ITEMS = [
-  { image: "https://picsum.photos/seed/depth1/800/1000", alt: "Slide 1" },
-  { image: "https://picsum.photos/seed/depth2/800/1000", alt: "Slide 2" },
-  { image: "https://picsum.photos/seed/depth3/800/1000", alt: "Slide 3" },
-  { image: "https://picsum.photos/seed/depth4/800/1000", alt: "Slide 4" },
-  { image: "https://picsum.photos/seed/depth5/800/1000", alt: "Slide 5" },
-  { image: "https://picsum.photos/seed/depth6/800/1000", alt: "Slide 6" },
+  { title: "Slide 1", description: "Description 1", image: "", alt: "Slide 1" },
+  { title: "Slide 2", description: "Description 2", image: "", alt: "Slide 2" },
+  { title: "Slide 3", description: "Description 3", image: "", alt: "Slide 3" },
+  { title: "Slide 4", description: "Description 4", image: "", alt: "Slide 4" },
+  { title: "Slide 5", description: "Description 5", image: "", alt: "Slide 5" },
+  { title: "Slide 6", description: "Description 6", image: "", alt: "Slide 6" },
 ];
 
 const clamp = (v: number, min: number, max: number) =>
   Math.min(Math.max(v, min), max);
 
-type DepthCarouselItem = string | { image: string; alt?: string };
+type DepthCarouselItem = string | { image?: string; title?: string; description?: string; alt?: string };
 
 const normalizeItem = (it: DepthCarouselItem) =>
-  typeof it === "string" ? { image: it, alt: "" } : it;
+  typeof it === "string" ? { image: it, alt: "", title: "", description: "" } : it;
 
 interface DepthCarouselProps {
   items?: DepthCarouselItem[];
@@ -42,7 +42,7 @@ interface DepthCarouselProps {
   loop?: boolean;
   showControls?: boolean;
   showIndicators?: boolean;
-  onChange?: (index: number, item: { image: string; alt?: string }) => void;
+  onChange?: (index: number, item: { image?: string; title?: string; description?: string; alt?: string }) => void;
   className?: string;
 }
 
@@ -492,12 +492,10 @@ const DepthCarousel = ({
             aria-hidden={active !== i}
             onClick={() => onCardClick(i)}
           >
-            <img
-              className="depth-carousel__img"
-              src={item.image}
-              alt={item.alt || ""}
-              draggable={false}
-            />
+            <div className="depth-carousel__content" style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", padding: "24px", textAlign: "center", color: "#fff" }}>
+              <h3 className="text-[16px] sm:text-[18px] font-semibold tracking-tight mb-2">{item.title || item.alt || ""}</h3>
+              <p className="text-[13px] sm:text-[14px] leading-relaxed opacity-80">{item.description || ""}</p>
+            </div>
             <span
               className="depth-carousel__tint"
               ref={(el) => {

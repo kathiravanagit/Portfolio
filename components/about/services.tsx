@@ -10,7 +10,6 @@ const DepthCarousel = dynamic(() => import("@/components/ui/DepthCarousel"), {
 type Service = {
   title: string;
   description: string;
-  image: string;
 };
 
 const SERVICES: Service[] = [
@@ -18,25 +17,23 @@ const SERVICES: Service[] = [
     title: "Custom Web Development",
     description:
       "Full-stack applications built with the MERN stack and Python backends. From concept to deployment — responsive, fast, and production-ready.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=800&fit=crop",
   },
   {
     title: "AI Integrations",
     description:
       "Smart features powered by Generative AI and computer vision. API integrations, chatbots, and intelligent automation for your products.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=800&fit=crop",
   },
   {
     title: "Database Management",
     description:
       "Robust, scalable data architectures with MongoDB and PostgreSQL. Schema design, optimization, and migration strategies that grow with your app.",
-    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=800&fit=crop",
   },
 ];
 
 export function Services(): ReactNode {
   const items = SERVICES.map((s) => ({
-    image: s.image,
+    title: s.title,
+    description: s.description,
     alt: s.title,
   }));
 
@@ -49,7 +46,7 @@ export function Services(): ReactNode {
         <div className="h-[420px] w-full">
           <DepthCarousel
             items={items}
-            cardWidth={240}
+            cardWidth={260}
             cardHeight={320}
             depth={180}
             spread={70}
@@ -64,21 +61,6 @@ export function Services(): ReactNode {
             showControls
             showIndicators
           />
-        </div>
-        <div className="mt-4 grid gap-3 sm:grid-cols-3">
-          {SERVICES.map((service) => (
-            <div
-              key={service.title}
-              className="bg-background border-foreground/5 flex flex-col gap-1.5 rounded-2xl border px-4 py-3"
-            >
-              <span className="text-foreground text-[14px] font-semibold tracking-tight">
-                {service.title}
-              </span>
-              <span className="text-foreground/55 text-[12px] leading-relaxed tracking-tight sm:text-[13px]">
-                {service.description}
-              </span>
-            </div>
-          ))}
         </div>
       </div>
     </div>
