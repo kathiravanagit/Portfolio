@@ -1,8 +1,8 @@
 import {
   ArrowRight,
-  Globe,
+  CalendarDays,
   Layers,
-  LineChart,
+  Leaf,
   Shield,
 } from "lucide-react";
 import type { ComponentType, ReactNode } from "react";
@@ -28,16 +28,16 @@ type Project = {
 const PROJECTS: Project[] = [
   {
     id: "cms",
-    icon: Globe,
-    iconLabel: "CMS",
+    icon: CalendarDays,
+    iconLabel: "ConferenceHub",
     title:
       "Conference Management System — a full-stack platform for managing conferences, registrations, and scheduling.",
     description:
-      "Built with React, Node.js, and MongoDB. Handles real-time updates, user authentication, and event management.",
+      "Built with React, Node.js, and MongoDB. Handles live meetings, one-click registration, instant certificates, and real-time Q&A.",
     meta: "Full Stack Developer, 2025",
-    imageRatio: 16 / 10,
-    image: "/projects/cms.svg",
-    imageAlt: "Conference Management System preview",
+    imageRatio: 2.1,
+    image: "/projects/conference.png",
+    imageAlt: "ConferenceHub academic events platform preview",
     liveUrl: "https://cms-18.vercel.app/",
     githubUrl: "https://github.com/kathiravanagit/conference-management-system.git",
   },
@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
     description:
       "Built with Node.js, Express.js, and MongoDB. Provides secure login, signup, and password recovery flows.",
     meta: "Backend Developer, 2025",
-    imageRatio: 16 / 10,
+    imageRatio: 2.1,
     image: "/projects/authkit.png",
     imageAlt: "User Authentication System preview",
     liveUrl: "https://authkit6.vercel.app/",
@@ -65,26 +65,26 @@ const PROJECTS: Project[] = [
     description:
       "Built with Django and PostgreSQL. Features admin dashboard, post scheduling, and SEO optimization.",
     meta: "Backend Developer, 2025",
-    imageRatio: 16 / 10,
+    imageRatio: 2.1,
     image: "/projects/blog.png",
     imageAlt: "Blog platform preview",
     liveUrl: "https://blog-iqez.onrender.com/",
     githubUrl: "https://github.com/kathiravanagit/Blog.git",
   },
   {
-    id: "coffee",
-    icon: LineChart,
-    iconLabel: "Coffee Shop",
+    id: "ecoquery",
+    icon: Leaf,
+    iconLabel: "EcoQuery",
     title:
-      "An elegant coffee shop website with menu display, online ordering, and responsive design.",
+      "EcoQuery — the control plane for sustainable AI, routing each query to the smallest capable model in the greenest region.",
     description:
-      "Frontend project built with HTML, CSS, and JavaScript. Clean UI with smooth animations.",
-    meta: "Frontend Developer, 2024",
-    imageRatio: 16 / 10,
-    image: "/projects/coffee-shop.png",
-    imageAlt: "Coffee Shop Website preview",
-    liveUrl: "https://coffee-shop-website-kappa-blush.vercel.app/",
-    githubUrl: "https://github.com/kathiravanagit/Coffee-Shop-Website.git",
+      "Decides whether inference is needed at all, matches against a knowledge layer, and logs an evidence trace for every decision. Built with Next.js and TypeScript.",
+    meta: "Full Stack Developer, 2026",
+    imageRatio: 2.1,
+    image: "/projects/ecoquery.png",
+    imageAlt: "EcoQuery sustainable AI control plane preview",
+    liveUrl: "https://www.ecoquery.tech/",
+    githubUrl: "https://github.com/kathiravanagit/EcoQuery",
   },
 ];
 
