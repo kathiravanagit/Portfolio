@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# openchamber tool artifacts (screenshots from local checks)
+/.openchamber/
